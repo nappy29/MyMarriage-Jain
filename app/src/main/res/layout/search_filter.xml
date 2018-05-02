@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:id="@+id/lin1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age Range"
+            android:layout_marginLeft="10dp"
+            android:textColor="#67C01D"
+            android:textSize="13dp"/>
+
+        <Spinner
+            android:id="@+id/age_spin"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/age_arrays" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/lin1"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/lin2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:layout_marginLeft="10dp"
+            android:textColor="#67C01D"
+            android:textSize="13dp"/>
+
+        <Spinner
+            android:id="@+id/city_spin"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/city_arrays" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/lin2"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/lin3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profession"
+            android:textColor="#67C01D"
+            android:layout_marginLeft="10dp"
+            android:textSize="13dp"/>
+
+        <Spinner
+            android:id="@+id/prof_spin"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/prof_arrays" />
+
+    </LinearLayout>
+
+</RelativeLayout>
